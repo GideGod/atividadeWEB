@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+
+/* formatação geral */
+
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+}
+
+.cabecalho {
+	width: 100%;
+	height: auto;
+	background-color: #070707;
+	text-align: center;
+}
+
+
+
+/* formatação dos menus */
+
+.cabecalho .menus {
+	height: 50px;
+	display: flex;
+	justify-content: center;
+}
+
+.cabecalho .menus .menu-item {
+	padding: 16px 16px;
+	color: rgb(248, 248, 250);
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 15pt;
+}
+
+.cabecalho .menus .menu-item:hover:not(.ativo) {
+	background-color: rgb(253, 251, 251);
+	color: rgb(70, 7, 245);
+}
+
+.cabecalho .menus .ativo {
+	background-color: #1D3266;
+}
+
+/* Fim formatação menus */
+
+
+/* Início formatação seção */
+
+.conteudo {
+	width: 100%;
+	min-height: 100%;
+	margin: 0 auto;
+}
+
+.conteudo h1 {
+	margin: 50px 0;
+	font-size: 26pt;
+	color: #0c0c0c;
+	text-align: center;
+	
+}
+
+/* Fim formatação seção */
+
+/* Início formatação index */
+
+.conteudo #cadastro #formulario {
+	width: 500px;
+	margin: 25px auto;
+}
+
+.conteudo #cadastro #formulario form input {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+}
+
+.conteudo #cadastro #formulario form input[type=button] {
+	margin: 20px 140px;
+	width: 200px;
+	padding: 10px;
+	border-radius: 10px;
+	border: 2px solid #070707;
+	box-shadow: 1px 1px #604dcc;
+	background-color: #f5f8fa;
+	font-family: Arial, Helvetica, sans-seri;
+	font-size: 14pt;
+}
+
+.conteudo #cadastro #formulario form input[type=button]:hover {
+	cursor: pointer;
+	background-color: #030303;
+	color: white;
+}
+
+.conteudo #cadastro #formulario form .entrada-dados {
+	width: 200px;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.conteudo #cadastro #formulario form textarea {
+	width: 464px;
+	height: 200px;
+	padding: 10px;
+	resize: none;
+	border-radius: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+}
+
+.conteudo #cadastro #formulario .aviso {
+	display: none;
+	text-align: center;
+	font-size: 14pt;
+	line-height: 1.5;
+}
+
+.conteudo #cadastro #formulario iframe {
+	display: none;
+	width: 100%;
+}
+
+.conteudo #cadastro #formulario form .borda-preta {
+	border: 2px solid #020202;
+	box-shadow: 1px 1px #0c0c0c;
+}
+
+.conteudo #cadastro #formulario form .borda-vermelha {
+	border: 2px solid #e84e4e;
+	box-shadow: 1px 1px #e84e4e;
+}
+
+/* Fim formatação index */
+
+
+/* Início formatação lista de clientes */
+
+.conteudo #clientes #lista-clientes table {
+	margin: 0 auto;
+	width: 60%;
+	border: 3px solid black;
+	border-collapse: collapse;
+}
+
+.conteudo #clientes #lista-clientes tr, th {
+	border: 3px solid black;
+	padding: 10px;
+}
+
+.conteudo #clientes #lista-clientes td {
+	border: 3px solid black;
+	padding: 5px;
+	text-align: center;
+}
+
+.conteudo #clientes #lista-clientes .nome-arquivo {
+	font-style: italic;
+}
+
+.conteudo #clientes #lista-clientes td a {
+	text-decoration: none;
+	color: black;
+}
+
+.conteudo #clientes #lista-clientes td a:hover {
+	text-decoration-line: underline;
+}
+
+.conteudo #clientes .exibir-arquivo {
+	display: none;
+	position: fixed;
+	background: rgba(0, 0, 0, 0.8);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.conteudo #clientes .exibir-arquivo .arquivo {
+	margin: 0 auto;
+	width: 50%;
+	height: 40%;
+	background-color: white;
+}
+
+.conteudo #clientes .exibir-arquivo .arquivo .conteudo-arquivo {
+	padding: 30px;
+}
+
+.conteudo #clientes .exibir-arquivo h2 {
+	margin: 20px 0;
+	font-size: 14pt;
+	color: white);
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.conteudo #clientes .exibir-arquivo a {
+	display: block;
+	margin: 10px auto;
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.conteudo #clientes .exibir-arquivo a:hover {
+	text-decoration: underline;
+}
+
+/* Fim formatação lista de clientes */
